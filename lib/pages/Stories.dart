@@ -17,12 +17,15 @@ class Stories extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Stories',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 25,
-                color: Colors.grey,
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: Text(
+                'Stories',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.grey,
+                ),
               ),
             ),
             Row(
@@ -63,7 +66,7 @@ class Stories extends StatelessWidget {
                         (index) {
                           return Padding(
                             padding: const EdgeInsets.only(
-                                right: 25, top: 20, left: 0),
+                                right: 20, top: 20, left: 0),
                             child: Column(
                               children: <Widget>[
                                 Container(
@@ -78,7 +81,7 @@ class Stories extends StatelessWidget {
                                               decoration: BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 border: Border.all(
-                                                  width: 3,
+                                                  width: 2,
                                                   color: red_story,
                                                 ),
                                               ),

@@ -1,7 +1,6 @@
+import 'package:chatui/pages/BottomNavBar.dart';
 import 'package:chatui/pages/Stories.dart';
-import 'package:chatui/pages/header.dart';
 import 'package:chatui/pages/messages.dart';
-import 'package:chatui/theme/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -17,96 +16,30 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: getBody(),
-      bottomNavigationBar: Row(
-        children: [
-          Container(
-            height: 80,
-            width: MediaQuery.of(context).size.width / 5,
-            decoration: BoxDecoration(
-              color: grey,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(
-                  'assets/images/conversation.png',
-                  scale: 20,
-                  color: Colors.blue,
-                ),
-                Text(
-                  'Messages',
-                  style: TextStyle(
-                    color: Colors.blue,
-                  ),
-                ),
-              ],
-            ),
+      bottomNavigationBar: BottomNavBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(
+          'Messages',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+            fontSize: 28,
           ),
-          Container(
-            height: 80,
-            width: MediaQuery.of(context).size.width / 5,
-            decoration: BoxDecoration(
-              color: grey,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.notifications,
-                  color: Colors.grey,
-                ),
-                Text('Notification'),
-              ],
-            ),
-          ),
-          Container(
-            height: 80,
-            width: MediaQuery.of(context).size.width / 5,
-            decoration: BoxDecoration(
-              color: grey,
-            ),
+        ),
+        centerTitle: true,
+        leading: Icon(
+          CupertinoIcons.search,
+          color: Colors.grey,
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
             child: CircleAvatar(
-              backgroundColor: Colors.blue,
-              radius: 15,
-              child: Icon(
-                Icons.add,
-                size: 30,
-                color: grey,
-              ),
-            ),
-          ),
-          Container(
-            height: 80,
-            width: MediaQuery.of(context).size.width / 5,
-            decoration: BoxDecoration(
-              color: grey,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.call,
-                  color: Colors.grey,
-                ),
-                Text('Phone'),
-              ],
-            ),
-          ),
-          Container(
-            height: 80,
-            width: MediaQuery.of(context).size.width / 5,
-            decoration: BoxDecoration(
-              color: grey,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.people_alt,
-                  color: Colors.grey,
-                ),
-                Text('Contacts'),
-              ],
+              radius: 20.0,
+              backgroundImage: AssetImage('assets/images/bappe.jpg'),
+              backgroundColor: Colors.transparent,
             ),
           ),
         ],
@@ -126,10 +59,8 @@ class _HomePageState extends State<HomePage> {
           children: [
             Column(
               children: [
-                Header(),
-
                 SizedBox(
-                  height: 30,
+                  height: 10,
                 ),
 
                 Stories(),

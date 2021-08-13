@@ -27,7 +27,7 @@ class Messages extends StatelessWidget {
               children: <Widget>[
                 Container(
                   width: 100,
-                  height: 75,
+                  height: 90,
                   child: Stack(
                     children: <Widget>[
                       //Chat Section Stories
@@ -60,7 +60,7 @@ class Messages extends StatelessWidget {
                       //         ),
                       //       )
                       Padding(
-                        padding: const EdgeInsets.only(left: 8.0),
+                        padding: const EdgeInsets.only(left: 8.0, top: 8),
                         child: Container(
                           width: 73,
                           height: 73,
@@ -77,8 +77,8 @@ class Messages extends StatelessWidget {
                       ),
                       userMessages[index]['online']
                           ? Positioned(
-                              bottom: 63,
-                              left: 53,
+                              bottom: 73,
+                              left: 56,
                               child: Container(
                                 width: 10,
                                 height: 10,
@@ -108,7 +108,7 @@ class Messages extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
+                        // fontStyle: FontStyle.italic,
                       ),
                     ),
                     SizedBox(
@@ -135,10 +135,11 @@ class Messages extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 15, top: 17),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
                         userMessages[index]['created_at'],
+                        style: TextStyle(color: Colors.grey),
                       ),
                       SizedBox(
                         height: 10,

@@ -60,7 +60,7 @@ List userMessages = [
     "online": true,
     "story": true,
     "message": "How are you doing?",
-    "created_at": "1:00 pm",
+    "created_at": "2Mins ago",
     "notification": true,
   },
   {
@@ -71,7 +71,7 @@ List userMessages = [
     "online": false,
     "story": false,
     "message": "Long time no see!!",
-    "created_at": "12:00 am",
+    "created_at": "12:01 AM",
     "notification": true,
   },
   {
@@ -82,7 +82,7 @@ List userMessages = [
     "online": false,
     "story": true,
     "message": "Glad to know you in person!",
-    "created_at": "3:30 pm",
+    "created_at": "YESTERDAY",
     "notification": true,
   },
   {
@@ -93,7 +93,7 @@ List userMessages = [
     "online": false,
     "story": false,
     "message": "I'm doing fine and how about you?",
-    "created_at": "9:00 am",
+    "created_at": "YESTERDAY",
     "notification": false,
   },
   {
@@ -104,7 +104,7 @@ List userMessages = [
     "online": true,
     "story": false,
     "message": "What is your real name?",
-    "created_at": "11:25 am",
+    "created_at": "5 DAYS AGO",
     "notification": false,
   },
   {
@@ -115,7 +115,7 @@ List userMessages = [
     "online": true,
     "story": true,
     "message": "I'm happy to be your friend",
-    "created_at": "10:00 am",
+    "created_at": "5 DAYS AGO",
     "notification": false,
   },
   {
@@ -126,7 +126,7 @@ List userMessages = [
     "online": false,
     "story": false,
     "message": "Thanks for your help.",
-    "created_at": "2:34 pm",
+    "created_at": "6 DAYS AGO",
     "notification": false,
   },
   {
@@ -137,7 +137,7 @@ List userMessages = [
     "online": false,
     "story": true,
     "message": "I just arrived home.",
-    "created_at": "1:12 am",
+    "created_at": "7 DAYS AGO",
     "notification": false,
   }
 ];
