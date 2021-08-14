@@ -21,12 +21,14 @@ class BottomNavBar extends StatelessWidget {
                   icon: Image.asset(
                     'assets/images/conversation.png',
                     color: Colors.blue,
+                    scale: 20,
                   ),
                 ),
                 Text(
                   'Messages',
                   style: TextStyle(
                     color: Colors.blue,
+                    fontSize: 12,
                   ),
                 ),
               ],
@@ -37,6 +39,7 @@ class BottomNavBar extends StatelessWidget {
                   onPressed: () {},
                   icon: Icon(
                     Icons.notifications,
+                    size: 28,
                   ),
                   color: Colors.grey,
                 ),
@@ -44,6 +47,7 @@ class BottomNavBar extends StatelessWidget {
                   'Notifications',
                   style: TextStyle(
                     color: Colors.grey,
+                    fontSize: 12,
                   ),
                 ),
               ],
@@ -68,15 +72,20 @@ class BottomNavBar extends StatelessWidget {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
-                    Icons.call,
-                    color: Colors.grey,
+                  icon: Container(
+                    child: Icon(
+                      Icons.call,
+                      color: Colors.grey,
+                      size: 28,
+                    ),
                   ),
                 ),
+                SizedBox(height: 0),
                 Text(
                   'Phone',
                   style: TextStyle(
                     color: Colors.grey,
+                    fontSize: 12,
                   ),
                 ),
               ],
@@ -88,12 +97,14 @@ class BottomNavBar extends StatelessWidget {
                   icon: Icon(
                     Icons.people_alt,
                     color: Colors.grey,
+                    size: 28,
                   ),
                 ),
                 Text(
                   'Contacts',
                   style: TextStyle(
                     color: Colors.grey,
+                    fontSize: 12,
                   ),
                 ),
               ],

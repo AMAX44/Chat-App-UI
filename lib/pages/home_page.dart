@@ -25,13 +25,22 @@ class _HomePageState extends State<HomePage> {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             color: Colors.black,
-            fontSize: 28,
+            fontSize: 25,
           ),
         ),
         centerTitle: true,
-        leading: Icon(
-          CupertinoIcons.search,
-          color: Colors.grey,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 10.0, bottom: 10, top: 8),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              color: Colors.grey[100],
+            ),
+            child: Icon(
+              CupertinoIcons.search,
+              color: Colors.grey,
+            ),
+          ),
         ),
         actions: [
           Padding(
@@ -60,7 +69,7 @@ class _HomePageState extends State<HomePage> {
             Column(
               children: [
                 SizedBox(
-                  height: 10,
+                  height: 0,
                 ),
 
                 Stories(),
@@ -70,11 +79,13 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(height: 10),
 
                 Messages(),
+                
               ],
             ),
           ],
         ),
       ),
+      
     );
   }
 }

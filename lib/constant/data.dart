@@ -26,7 +26,7 @@ List userStories = [
   },
   {
     "id": 4,
-    "name": "Valerie Carnegie",
+    "name": "Valerie Bezoz",
     "img":
         "https://images.unsplash.com/photo-1523264939339-c89f9dadde2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
     "online": true,
@@ -34,7 +34,7 @@ List userStories = [
   },
   {
     "id": 5,
-    "name": "Frank Bottoms",
+    "name": "Frank Gates",
     "img":
         "https://images.unsplash.com/photo-1458696352784-ffe1f47c2edc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80",
     "online": false,
@@ -60,7 +60,7 @@ List userMessages = [
     "online": true,
     "story": true,
     "message": "How are you doing?",
-    "created_at": "2Mins ago",
+    "created_at": "2MINS AGO",
     "notification": true,
   },
   {

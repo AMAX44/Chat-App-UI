@@ -77,8 +77,8 @@ class Messages extends StatelessWidget {
                       ),
                       userMessages[index]['online']
                           ? Positioned(
-                              bottom: 73,
-                              left: 56,
+                              bottom: 65,
+                              left: 65,
                               child: Container(
                                 width: 10,
                                 height: 10,
@@ -106,7 +106,7 @@ class Messages extends StatelessWidget {
                     Text(
                       userMessages[index]['name'],
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
                         // fontStyle: FontStyle.italic,
                       ),
@@ -123,7 +123,7 @@ class Messages extends StatelessWidget {
                           fontSize: 15,
                           color: userMessages[index]['notification']
                               ? Colors.blue
-                              : Colors.grey[800],
+                              : Colors.grey[400],
                         ),
                       ),
                     ),
@@ -139,7 +139,7 @@ class Messages extends StatelessWidget {
                     children: [
                       Text(
                         userMessages[index]['created_at'],
-                        style: TextStyle(color: Colors.grey),
+                        style: TextStyle(color: Colors.grey, fontSize: 13),
                       ),
                       SizedBox(
                         height: 10,

@@ -8,12 +8,12 @@ class Stories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.only(top: 10, left: 20),
-      height: 180,
-      color: Colors.grey[100],
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Container(
+        padding: EdgeInsets.only(top: 10, left: 20),
+        height: 180,
+        color: Colors.grey[100],
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -31,7 +31,7 @@ class Stories extends StatelessWidget {
             Row(
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(right: 25, top: 15),
+                  padding: const EdgeInsets.only(right: 20, top: 15),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -69,7 +69,7 @@ class Stories extends StatelessWidget {
                                 right: 20, top: 20, left: 0),
                             child: Column(
                               children: <Widget>[
-                                Container(
+                                Container(                                  
                                   width: 73,
                                   height: 73,
                                   child: Stack(
@@ -116,9 +116,9 @@ class Stories extends StatelessWidget {
                                                 ),
                                               ),
                                             ),
-
+    
                                       //Stories online mark
-
+    
                                       // userStories[index]['online']
                                       //     ? Positioned(
                                       //         bottom: 63,
