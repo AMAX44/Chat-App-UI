@@ -21,7 +21,7 @@ class BottomNavBar extends StatelessWidget {
                   icon: Image.asset(
                     'assets/images/conversation.png',
                     color: Colors.blue,
-                    scale: 20,
+                    scale: 22,
                   ),
                 ),
                 Text(
@@ -39,7 +39,7 @@ class BottomNavBar extends StatelessWidget {
                   onPressed: () {},
                   icon: Icon(
                     Icons.notifications,
-                    size: 28,
+                    size: 25,
                   ),
                   color: Colors.grey,
                 ),
@@ -76,7 +76,7 @@ class BottomNavBar extends StatelessWidget {
                     child: Icon(
                       Icons.call,
                       color: Colors.grey,
-                      size: 28,
+                      size: 25,
                     ),
                   ),
                 ),
@@ -97,7 +97,7 @@ class BottomNavBar extends StatelessWidget {
                   icon: Icon(
                     Icons.people_alt,
                     color: Colors.grey,
-                    size: 28,
+                    size: 25,
                   ),
                 ),
                 Text(
